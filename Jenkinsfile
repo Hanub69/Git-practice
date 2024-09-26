@@ -17,5 +17,10 @@ pipeline {
                 echo 'This is Declarative pipeline 3rd stage'
             }
         }
+        stage('Fourth') {
+            steps {
+                echo 'This is Declarative pipeline 4th stage'
+            }
+        }
     }
 }
