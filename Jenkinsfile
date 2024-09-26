@@ -2,9 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('first') {
             steps {
-                echo 'This is pipeline script from Git'
+                echo 'This is declarative pipeline first stage'
+            }
+        }
+        stage('second') {
+            steps {
+                echo 'This is declarative pipeline 2nd stage'
+            }
+        }
+        stage('third') {
+            steps {
+                echo 'This is Declarative pipeline 3rd stage'
             }
         }
     }
